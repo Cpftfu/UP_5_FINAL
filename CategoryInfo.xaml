@@ -1,0 +1,40 @@
+﻿<Page x:Class="UP_FINAL.CategoryInfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UP_FINAL"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="850"
+      Title="CategoryInfo">
+
+    <Grid Background="white">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Data to fill:" Foreground="#4169E1" FontFamily="Arial Black" FontSize="20px" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="3" Grid.Row="3"/>
+        <TextBox Name="changeCategoryNameTxtBox" Background="#4169E1" FontFamily="Arial Black" FontSize="17px" Foreground="White" VerticalAlignment="Top" Grid.Row="4" Grid.ColumnSpan="3" Grid.Column="2" Margin="10,0,10,0" Height="31"/>
+        <DataGrid Name="CategoriesDataGrid" Background="#4169E1" Grid.ColumnSpan="2" Grid.RowSpan="11" AutoGenerateColumns="True"/>
+        <Button Name="for_add_emp" Background="#4169E1" FontFamily="Arial Black" FontSize="17px" Foreground="White" Content="Add" Grid.Row="10" Grid.Column="2" Margin="10,10,0,0" Click="for_add_emp_Click"/>
+        <Button Name="for_update_emp" Background="#4169E1" FontFamily="Arial Black" FontSize="17px" Foreground="White" Content="Update" Grid.Row="10" Grid.Column="3" Margin="10,10,0,0" Click="for_update_emp_Click"/>
+        <Button Name="for_delete_emp" Background="#4169E1" FontFamily="Arial Black" FontSize="17px" Foreground="White" Content="Delete" Grid.Row="10" Grid.Column="4" Margin="10,10,0,0" Click="for_delete_emp_Click"/>
+    </Grid>
+</Page>
